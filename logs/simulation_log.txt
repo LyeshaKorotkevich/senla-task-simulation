@@ -1,0 +1,5 @@
+2024-10-29 23:54:46 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-29 23:54:46 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-29 23:55:09 INFO  c.s.e.service.LivingEntityService - lfljslfjls added to ecosystem as Plant.
+2024-10-29 23:55:15 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
+2024-10-29 23:55:16 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241029_2355/Animal.txt and src/main/resources/simulation20241029_2355/Plant.txt

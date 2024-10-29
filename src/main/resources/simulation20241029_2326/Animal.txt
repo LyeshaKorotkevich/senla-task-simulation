@@ -1,0 +1,10 @@
+2,Predator,Lion,5
+4,Predator,Wolf,5
+6,Predator,Tiger,5
+8,Predator,Cheetah,5
+10,Predator,Eagle,5
+12,Predator,GrizzlyBear,5
+14,Predator,Leopard,5
+16,Omnivore,Boar,4
+17,Herbivore,Hippopotamus,3
+18,Predator,Falcon,5

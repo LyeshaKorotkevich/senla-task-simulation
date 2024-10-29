@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.senla'
+version = '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    lombokVersion = '1.18.28'
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.senla.ecosystem.EcosystemApp'
+        )
+    }
+}
+
+application {
+    mainClass = 'com.senla.ecosystem.EcosystemApp'
+}
+
+test {
+    useJUnitPlatform()
+}
