@@ -1,11 +1,4 @@
 #!/bin/bash
 
-# Проверка наличия файла gradlew
-if [ ! -f "./gradlew" ]; then
-  echo "Ошибка: файл gradlew не найден. Убедитесь, что вы находитесь в корне проекта."
-  exit 1
-fi
-
-# Запуск Gradle для сборки и запуска приложения
 echo "Запуск сборки и симуляции экосистемы..."
-./gradlew run
+java -jar build/libs/WildLifeSimulator-0.1-all.jar
