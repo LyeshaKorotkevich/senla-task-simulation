@@ -9,6 +9,11 @@ import com.senla.ecosystem.view.ConsoleView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Класс LivingEntityService предоставляет методы для работы с живыми сущностями (животные и растения) в экосистеме.
+ * Служит для добавления, удаления и обновления информации о живых сущностях в системе.
+ * Использует ConsoleView для взаимодействия с пользователем и Repository для хранения сущностей.
+ */
 public class LivingEntityService {
     private static final Logger logger = LoggerFactory.getLogger(LivingEntityService.class);
 
@@ -22,6 +27,10 @@ public class LivingEntityService {
         this.plantRepository = plantRepository;
     }
 
+    /**
+     * Метод добавления новой живой сущности. Позволяет пользователю выбрать тип сущности
+     * (животное или растение), вводит необходимые данные, создает и добавляет сущность в репозиторий.
+     */
     public void addLivingEntity() {
         int entityType = view.getInputInt("Choose the type to add (1 - Animal, 2 - Plant): ");
         int id = entityType == 1 ? generateUniqueId(animalRepository) : generateUniqueId(plantRepository);
@@ -56,6 +65,10 @@ public class LivingEntityService {
         }
     }
 
+    /**
+     * Метод удаления живой сущности по идентификатору.
+     * Позволяет пользователю выбрать тип сущности и ввести её идентификатор для удаления.
+     */
     public void deleteLivingEntityById() {
         int entityType = view.getInputInt("Choose the type to delete (1 - Animal, 2 - Plant): ");
         int id = Integer.parseInt(view.getInput("Enter the ID of the entity to delete: "));
@@ -83,6 +96,10 @@ public class LivingEntityService {
         }
     }
 
+    /**
+     * Метод обновления информации о живой сущности по идентификатору.
+     * Позволяет пользователю выбрать тип сущности и ввести новый набор данных для обновления.
+     */
     public void updateLivingEntityById() {
         int entityType = view.getInputInt("Choose the type to update (1 - Animal, 2 - Plant): ");
         int id = Integer.parseInt(view.getInput("Enter the ID of the entity to update: "));
@@ -118,6 +135,12 @@ public class LivingEntityService {
         }
     }
 
+    /**
+     * Вспомогательный метод для генерации уникального идентификатора для новой сущности.
+     *
+     * @param repository Репозиторий, в котором проверяется наличие идентификаторов
+     * @return Сгенерированный уникальный идентификатор
+     */
     private int generateUniqueId(Repository<? extends Identifiable> repository) {
         return repository.getAll().stream()
                 .mapToInt(Identifiable::getId)

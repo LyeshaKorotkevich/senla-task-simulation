@@ -108,3 +108,220 @@ Tulip population is stable.
 2024-10-30 11:36:18 INFO  c.s.e.controller.EcosystemController - Rabbit has been removed from the simulation.
 2024-10-30 11:36:18 INFO  c.s.e.controller.EcosystemController - Boar has been removed from the simulation.
 2024-10-30 11:36:18 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 7 animals and 2 plants surviving.
+2024-10-30 12:00:52 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 12:00:52 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.69125879739059, Humidity = 49.686317275708774, Water = 98.0
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.69125879739059, Humidity = 49.686317275708774, Water = 98.0
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Rabbit ate Rose
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Deer ate Tulip
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - GrizzlyBear hunted Deer
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Falcon hunted Bison
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Zebra has died.
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Bison has died.
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 12:01:03 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Raccoon has been removed from the simulation.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Giraffe has been removed from the simulation.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Crow has been removed from the simulation.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Hippopotamus has been removed from the simulation.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Hippopotamus has been removed from the simulation.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Bear has been removed from the simulation.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Crow has been removed from the simulation.
+2024-10-30 12:01:03 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 17 animals and 0 plants surviving.
+2024-10-30 12:03:03 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
+2024-10-30 12:03:04 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241030_1203/Animal.txt and src/main/resources/simulation20241030_1203/Plant.txt
+2024-10-30 14:23:41 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 14:23:41 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 14:23:48 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 14:23:48 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 14:23:48 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.57129577253667, Humidity = 49.6005086309255, Water = 98.0
+2024-10-30 14:23:48 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.57129577253667, Humidity = 49.6005086309255, Water = 98.0
+2024-10-30 14:23:48 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 14:23:48 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 14:23:48 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Panda has been removed from the simulation.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Panda has been removed from the simulation.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Giraffe has been removed from the simulation.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Panda has been removed from the simulation.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Zebra has been removed from the simulation.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Deer has been removed from the simulation.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Panda has been removed from the simulation.
+2024-10-30 14:23:48 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 13 animals and 2 plants surviving.
+2024-10-30 14:37:36 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 14:37:36 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.335013942652225, Humidity = 49.484086565225994, Water = 98.0
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.335013942652225, Humidity = 49.484086565225994, Water = 98.0
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Tiger hunted Rabbit
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Falcon hunted Deer
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Bison ate Tulip
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Giraffe ate Rose
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - GrizzlyBear hunted Deer
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Deer has died.
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 14:37:40 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Boar has been removed from the simulation.
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Hippopotamus has been removed from the simulation.
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Zebra has been removed from the simulation.
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Boar has been removed from the simulation.
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Crow has been removed from the simulation.
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Raccoon has been removed from the simulation.
+2024-10-30 14:37:40 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 12 animals and 0 plants surviving.
+2024-10-30 14:37:45 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
+2024-10-30 14:37:45 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241030_1437/Animal.txt and src/main/resources/simulation20241030_1437/Plant.txt
+2024-10-30 17:15:35 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 17:15:35 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.018339971248835, Humidity = 50.214233054440854, Water = 98.0
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.018339971248835, Humidity = 50.214233054440854, Water = 98.0
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Falcon hunted Giraffe
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Falcon hunted Giraffe
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Rabbit ate Tulip
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Tiger hunted Zebra
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 17:15:41 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 17:15:41 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 17:15:41 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 18 animals and 1 plants surviving.
+2024-10-30 17:21:25 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 17:21:25 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 17:21:27 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 17:21:27 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 17:21:27 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.42367924933966, Humidity = 50.936618512107415, Water = 98.0
+2024-10-30 17:21:27 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.42367924933966, Humidity = 50.936618512107415, Water = 98.0
+2024-10-30 17:21:27 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 17:21:27 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 17:21:27 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 17:21:27 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 17:21:27 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 16 animals and 2 plants surviving.
+2024-10-30 17:34:04 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 17:34:04 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 17:34:07 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 17:34:07 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 17:34:07 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.609412220998024, Humidity = 50.69666475965743, Water = 98.0
+2024-10-30 17:34:07 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.609412220998024, Humidity = 50.69666475965743, Water = 98.0
+2024-10-30 17:34:07 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 17:34:07 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 17:34:07 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 17:34:07 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 17:34:07 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 14 animals and 2 plants surviving.
+2024-10-30 17:47:08 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 17:47:08 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 17:47:10 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 17:47:10 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 17:47:10 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.768978532904004, Humidity = 49.05617041413745, Water = 98.0
+2024-10-30 17:47:10 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.768978532904004, Humidity = 49.05617041413745, Water = 98.0
+2024-10-30 17:47:10 INFO  c.s.ecosystem.simulation.Simulator - GrizzlyBear hunted Hippopotamus
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - GrizzlyBear interacted with Fox
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Boar interacted with Raccoon
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Boar interacted with Bison
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Zebra ate Rose
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Zebra interacted with Tiger
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Rabbit ate Tulip
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Rabbit interacted with Bear
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Rabbit interacted with Bison
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Cheetah hunted Panda
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Cheetah interacted with Falcon
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Cheetah interacted with Deer
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Eagle hunted Rabbit
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Eagle interacted with Lion
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Eagle interacted with Raccoon
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Hippopotamus ate Rose
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Hippopotamus interacted with Panda
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Hippopotamus interacted with Rabbit
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Lion hunted Panda
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Lion interacted with Rabbit
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Lion interacted with Bear
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Bison ate Tulip
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Bison interacted with Wolf
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Bison interacted with Tiger
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Fox interacted with Eagle
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Panda ate Tulip
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Panda interacted with Cheetah
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Panda interacted with Deer
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Deer ate Tulip
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Deer interacted with Bear
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Deer interacted with Boar
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Deer interacted with Fox
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Leopard hunted Giraffe
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Leopard interacted with Deer
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Leopard interacted with Tiger
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Leopard interacted with Wolf
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Bear interacted with GrizzlyBear
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Bear interacted with Raccoon
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Wolf hunted Giraffe
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Wolf interacted with Panda
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Giraffe ate Rose
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Giraffe interacted with Zebra
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Crow interacted with Rabbit
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Crow interacted with Panda
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Crow interacted with Wolf
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Falcon hunted Zebra
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Falcon interacted with Raccoon
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Falcon interacted with Fox
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Raccoon interacted with Wolf
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Raccoon interacted with Tiger
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Raccoon interacted with Rabbit
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Tiger hunted Zebra
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Tiger interacted with Wolf
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 17:47:11 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 17:47:11 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 17:47:11 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 11 animals and 0 plants surviving.
+2024-10-30 17:58:02 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 17:58:02 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 17:58:04 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 17:58:04 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 17:58:04 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.925227966480463, Humidity = 50.992739629921, Water = 98.0
+2024-10-30 17:58:04 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.925227966480463, Humidity = 50.992739629921, Water = 98.0
+2024-10-30 17:58:04 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 17:58:04 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 17:58:04 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 17:58:04 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 17:58:04 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 16 animals and 2 plants surviving.
+2024-10-30 18:14:10 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 18:14:10 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 18:14:16 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 18:14:16 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 18:14:16 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.82093794646951, Humidity = 49.117753706465884, Water = 98.0
+2024-10-30 18:14:16 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.82093794646951, Humidity = 49.117753706465884, Water = 98.0
+2024-10-30 18:14:16 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 18:14:16 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 18:14:16 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 18:14:16 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 18:14:16 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 16 animals and 2 plants surviving.
+2024-10-30 18:16:26 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
+2024-10-30 18:16:26 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241030_1816/Animal.txt and src/main/resources/simulation20241030_1816/Plant.txt
+2024-10-30 18:16:50 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 18:16:50 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 18:16:55 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 18:16:55 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 18:16:55 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.044324474669075, Humidity = 50.34444254612121, Water = 98.0
+2024-10-30 18:16:55 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 24.044324474669075, Humidity = 50.34444254612121, Water = 98.0
+2024-10-30 18:16:55 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 18:16:55 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 18:16:55 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 18:16:55 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 18:16:55 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 13 animals and 2 plants surviving.
+2024-10-30 18:21:55 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
+2024-10-30 18:21:56 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241030_1821/Animal.txt and src/main/resources/simulation20241030_1821/Plant.txt

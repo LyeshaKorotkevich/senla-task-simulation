@@ -1,16 +1,21 @@
 package com.senla.ecosystem.simulation;
 
+import com.senla.ecosystem.model.Interactable;
 import com.senla.ecosystem.model.animal.Animal;
 import com.senla.ecosystem.model.animal.Herbivore;
 import com.senla.ecosystem.model.animal.Predator;
 import com.senla.ecosystem.model.plant.Plant;
 import com.senla.ecosystem.repository.Repository;
+import com.senla.ecosystem.utils.Randomizer;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static com.senla.ecosystem.utils.AppConstants.RESOURCE_FOOD;
 import static com.senla.ecosystem.utils.AppConstants.RESOURCE_SHELTER;
@@ -75,60 +80,46 @@ public class Simulator {
     private void performInteractions() {
         List<Animal> copyOfAnimals = new ArrayList<>(animalRepository.getAll());
         List<Plant> copyOfPlants = new ArrayList<>(plantRepository.getAll());
-        List<Plant> plantsToRemove = new ArrayList<>();
         List<Animal> animalsToRemove = new ArrayList<>();
+        List<Plant> plantsToRemove = new ArrayList<>();
 
-        int interactions = Math.min(copyOfAnimals.size(), 5);
+        Collections.shuffle(copyOfAnimals);
+        Collections.shuffle(copyOfPlants);
 
-        for (int i = 0; i < interactions; i++) {
-            Animal animal = copyOfAnimals.get((int) (Math.random() * copyOfAnimals.size()));
-            if (animal instanceof Herbivore) {
-                if (ecosystemResources.getHumidity() >= 20 && !copyOfPlants.isEmpty()) {
-                    Plant plant = copyOfPlants.get((int) (Math.random() * copyOfPlants.size()));
-                    animal.eat(plant, plantsToRemove);
-                    plantsToRemove.add(plant);
-                    logger.info("{} ate {}", animal.getName(), plant.getSpecies());
-                } else {
-                    logger.info("{} found no plants to eat or conditions are unfavorable.", animal.getName());
-                }
-            } else if (animal instanceof Predator) {
-                List<Animal> herbivores = copyOfAnimals.stream()
-                        .filter(a -> a instanceof Herbivore && a != animal)
-                        .toList();
-                if (!herbivores.isEmpty()) {
-                    Animal prey = herbivores.get((int) (Math.random() * herbivores.size()));
-                    animal.eat(prey, animalsToRemove);
-                    animalsToRemove.add(prey);
-                    logger.info("{} hunted {}", animal.getName(), prey.getName());
-                } else {
-                    logger.info("{} found no herbivores to hunt.", animal.getName());
-                    if (Math.random() < 0.3) {
-                        animalsToRemove.add(animal);
-                        logger.info("{} has died from starvation.", animal.getName());
+        for (Animal currentAnimal : copyOfAnimals) {
+            if (currentAnimal instanceof Interactable && !animalsToRemove.contains(currentAnimal)) {
+                int interactionsLimit = 2;
+                int interactionsCount = 0;
+
+                Set<Animal> interactedAnimals = new HashSet<>();
+
+                while (interactionsCount < interactionsLimit) {
+                    int randomIndex = Randomizer.getRandomInt(0, copyOfAnimals.size() - 1);
+                    Animal otherAnimal = copyOfAnimals.get(randomIndex);
+
+                    if (otherAnimal != currentAnimal && !interactedAnimals.contains(otherAnimal) && !animalsToRemove.contains(otherAnimal)) {
+                        interactedAnimals.add(otherAnimal);
+                        ((Interactable) currentAnimal).interact(otherAnimal, animalsToRemove);
+                        interactionsCount++;
+                    }
+
+                    if (interactionsCount >= copyOfAnimals.size() - 1) {
+                        break;
                     }
                 }
             }
         }
 
-        for (Plant plant : copyOfPlants) {
+        List<Plant> plants = plantRepository.getAll();
+        for (Plant plant : plants) {
             plant.adaptToEnvironment(ecosystemResources);
-            if (plant.getHealth() <= 0) {
+            if (plant.getHealth() == 0) {
                 plantsToRemove.add(plant);
-                logger.info("{} has died due to unfavorable conditions.", plant.getSpecies());
             }
         }
 
-        for (Animal animal : copyOfAnimals) {
-            if (animal instanceof Herbivore) {
-                if (Math.random() < 0.1) {
-                    animalsToRemove.add(animal);
-                    logger.info("{} has died.", animal.getName());
-                }
-            }
-        }
-
-        plantsToRemove.forEach(this::removePlant);
-        animalsToRemove.forEach(this::removeAnimal);
+        plantsToRemove.forEach(plant -> plantRepository.remove(plant.getId()));
+        animalsToRemove.forEach(animal -> animalRepository.remove(animal.getId()));
     }
 
 

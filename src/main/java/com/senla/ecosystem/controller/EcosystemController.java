@@ -43,11 +43,7 @@ public class EcosystemController {
 
             switch (choice) {
                 case 1 -> {
-                    try {
-                        simulateEcosystem();
-                    } catch (IOException e) {
-                        logger.error("Error during ecosystem simulation", e);
-                    }
+                    simulateEcosystem();
                     view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystemResources());
                 }
                 case 2 -> showPredictions();
@@ -77,61 +73,25 @@ public class EcosystemController {
         logger.info("Ecosystem Simulator ended.");
     }
 
-    private void simulateEcosystem() throws IOException {
+    private void simulateEcosystem() {
         simulator.simulateAutomatically(1);
-
-        List<Animal> currentAnimals = animalRepository.getAll();
-        List<Animal> animalsToRemove = new ArrayList<>();
 
         logger.info("Starting ecosystem simulation...");
         view.displayMessage("Starting ecosystem simulation...");
 
-        for (Animal currentAnimal : currentAnimals) {
-            if (currentAnimal instanceof Interactable) {
-                int interactionsLimit = 2;
-                int interactionsCount = 0;
+        List<Animal> currentAnimals = animalRepository.getAll();
+        List<Plant> currentPlants = plantRepository.getAll();
 
-                Set<Animal> interactedAnimals = new HashSet<>();
-
-                while (interactionsCount < interactionsLimit) {
-                    int randomIndex = Randomizer.getRandomInt(0, currentAnimals.size() - 1);
-                    Animal otherAnimal = currentAnimals.get(randomIndex);
-
-                    if (otherAnimal != currentAnimal && !interactedAnimals.contains(otherAnimal)) {
-                        interactedAnimals.add(otherAnimal);
-                        ((Interactable) currentAnimal).interact(otherAnimal, animalsToRemove);
-                        interactionsCount++;
-                    }
-
-                    if (interactionsCount >= currentAnimals.size() - 1) {
-                        break;
-                    }
-                }
-            }
-        }
-
-        List<Plant> plants = plantRepository.getAll();
-        for (Plant plant : plants) {
-            plant.adaptToEnvironment(simulator.getEcosystemResources());
-        }
-
-        for (Animal animal : animalsToRemove) {
-            animalRepository.remove(animal.getId());
-            logger.info(animal.getName() + " has been removed from the simulation.");
-            view.displayMessage(animal.getName() + " has been removed from the simulation.");
-        }
-
-        int survivingAnimals = currentAnimals.size() - animalsToRemove.size();
-        int survivingPlants = plants.size();
+        int survivingAnimals = currentAnimals.size();
+        int survivingPlants = currentPlants.size();
 
         view.displayMessage("\n--- Ecosystem Simulation Summary ---");
         view.displayMessage("Surviving Animals: " + survivingAnimals);
         view.displayMessage("Surviving Plants: " + survivingPlants);
-        view.displayMessage("Animals removed: " + animalsToRemove.size());
         logger.info("Ecosystem simulated successfully with " + survivingAnimals + " animals and " + survivingPlants + " plants surviving.");
-
         view.displayMessage("Ecosystem simulated successfully.");
     }
+
 
     private void showPredictions() {
         String predictions = simulator.predictPopulationTrends();
