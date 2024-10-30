@@ -23,6 +23,7 @@
 ## Технологии
 
 - Java 17
+- Gradle
 - Lombok
 - Logback
 

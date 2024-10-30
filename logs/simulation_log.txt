@@ -325,3 +325,7 @@ Tulip population is stable.
 2024-10-30 18:16:55 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 13 animals and 2 plants surviving.
 2024-10-30 18:21:55 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
 2024-10-30 18:21:56 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241030_1821/Animal.txt and src/main/resources/simulation20241030_1821/Plant.txt
+2024-10-30 18:44:59 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 18:44:59 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 18:45:01 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
+2024-10-30 18:45:01 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241030_1845/Animal.txt and src/main/resources/simulation20241030_1845/Plant.txt
