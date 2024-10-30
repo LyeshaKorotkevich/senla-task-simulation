@@ -7,3 +7,55 @@
 2024-10-30 01:55:02 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
 2024-10-30 01:55:07 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator ended.
 2024-10-30 01:55:07 INFO  com.senla.ecosystem.data.DataManager - Simulation saved as src/main/resources/simulation20241030_0155/Animal.txt and src/main/resources/simulation20241030_0155/Plant.txt
+2024-10-30 11:02:40 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-10-30 11:02:40 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-10-30 11:05:14 INFO  c.s.e.service.LivingEntityService - wolf added to ecosystem as Animal.
+2024-10-30 11:06:48 INFO  c.s.e.service.LivingEntityService - Animal ID 21 updated to wolf
+2024-10-30 11:08:04 INFO  c.s.e.service.LivingEntityService - Animal with ID 21 removed.
+2024-10-30 11:09:32 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.76072563784861, Humidity = 50.537942229209705, Water = 98.0
+2024-10-30 11:09:32 INFO  c.s.e.controller.EcosystemController - Ecosystem conditions adjusted.
+2024-10-30 11:11:34 INFO  c.s.e.controller.EcosystemController - Predictions shown: Population Trends Prediction:
+Deer population is likely to increase.
+Lion population is likely to increase.
+Rabbit population is likely to increase.
+Wolf population is likely to increase.
+Bear population is likely to decrease.
+Tiger population is likely to increase.
+Giraffe population is likely to increase.
+Cheetah population is likely to increase.
+Fox population is likely to decrease.
+Eagle population is likely to increase.
+Zebra population is likely to increase.
+GrizzlyBear population is likely to increase.
+Raccoon population is likely to decrease.
+Leopard population is likely to increase.
+Panda population is likely to increase.
+Boar population is likely to decrease.
+Hippopotamus population is likely to increase.
+Falcon population is likely to increase.
+Bison population is likely to increase.
+Crow population is likely to decrease.
+FloweringPlant population is likely to increase.
+FloweringPlant population is likely to increase.
+
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.303522205379583, Humidity = 51.2426067611944, Water = 96.0
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Ecosystem conditions adjusted: Temperature = 25.303522205379583, Humidity = 51.2426067611944, Water = 96.0
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Tiger hunted Giraffe
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Bison ate FloweringPlant
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Wolf hunted Bison
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Cheetah hunted Panda
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Cheetah hunted Giraffe
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Resources replenished: Water levels increased.
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-10-30 11:13:13 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Deer has been removed from the simulation.
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Raccoon has been removed from the simulation.
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Rabbit has been removed from the simulation.
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Rabbit has been removed from the simulation.
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Rabbit has been removed from the simulation.
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Raccoon has been removed from the simulation.
+2024-10-30 11:13:13 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 11 animals and 1 plants surviving.
