@@ -165,8 +165,8 @@ Hippopotamus population is likely to increase.
 Falcon population is likely to increase.
 Bison population is likely to increase.
 Crow population is likely to decrease.
-FloweringPlant population is likely to increase.
-FloweringPlant population is likely to increase.
+Rose population is stable.
+Tulip population is stable.
 ```
 
 ### Автоматическая симуляция
@@ -174,88 +174,93 @@ FloweringPlant population is likely to increase.
 ```
 Enter 1 to simulate, 2 to predict, 3 to configure the environment, 4 to add a creature, 5 to remove a creature, 6 to update a creature, or 0 to exit:
 1
-Tiger is eating Giraffe
-Bison is eating FloweringPlant
-Wolf is eating Bison
-Cheetah is eating Panda
+Cheetah is eating Bison
+Eagle is eating Deer
 Cheetah is eating Giraffe
-FloweringPlant is thriving.
-FloweringPlant is thriving.
+Rose is thriving.
+Tulip is thriving.
 Starting ecosystem simulation...
-Deer flees from Tiger
-Deer runs away!
-Deer continues grazing and ignores Bear
-Lion is not interested in Raccoon
-Lion is not interested in Zebra
-Rabbit flees from Tiger
-Rabbit runs away!
-Rabbit continues grazing and ignores Boar
-Wolf chases and eats Deer
-Wolf is eating Deer
-Wolf is not interested in Falcon
-Bear ignores Leopard
+Lion is not interested in Wolf
+Lion is not interested in Rabbit
+Rabbit continues grazing and ignores Zebra
+Rabbit continues grazing and ignores Panda
+Wolf is not interested in Raccoon
+Wolf attacks Boar, considering it as food.
+Wolf is eating Boar
+Bear ignores Zebra
 Bear ignores Raccoon
-Tiger is not interested in Falcon
-Tiger attacks Raccoon, considering it as food.
-Tiger is eating Raccoon
-Cheetah chases and eats Rabbit
-Cheetah is eating Rabbit
-Cheetah is not interested in Raccoon
-Fox decides to eat Rabbit
-Fox is eating Rabbit
-Fox ignores Raccoon
-Eagle is not interested in Rabbit
-Eagle is not interested in Crow
-Zebra flees from Eagle
+Tiger chases and eats Zebra
+Tiger is eating Zebra
+Tiger is not interested in GrizzlyBear
+Cheetah chases and eats Panda
+Cheetah is eating Panda
+Cheetah chases and eats Hippopotamus
+Cheetah is eating Hippopotamus
+Fox ignores Boar
+Fox cautiously interacts with Falcon
+Eagle is not interested in GrizzlyBear
+Eagle attacks Bear, considering it as food.
+Eagle is eating Bear
+Zebra continues grazing and ignores Wolf
+Zebra flees from Falcon
 Zebra runs away!
-Zebra flees from Cheetah
-Zebra runs away!
-GrizzlyBear chases and eats Rabbit
-GrizzlyBear is eating Rabbit
-GrizzlyBear is not interested in Wolf
-Raccoon ignores Deer
-Raccoon ignores Rabbit
-Leopard attacks Raccoon, considering it as food.
-Leopard is eating Raccoon
-Leopard is not interested in Wolf
-Boar ignores Zebra
-Boar ignores Hippopotamus
-Hippopotamus continues grazing and ignores Rabbit
-Hippopotamus continues grazing and ignores Boar
+GrizzlyBear is not interested in Falcon
+GrizzlyBear chases and eats Zebra
+GrizzlyBear is eating Zebra
+Raccoon ignores Falcon
+Raccoon ignores Wolf
+Leopard attacks Bear, considering it as food.
+Leopard is eating Bear
+Leopard chases and eats Hippopotamus
+Leopard is eating Hippopotamus
+Panda continues grazing and ignores Rabbit
+Panda flees from Wolf
+Panda runs away!
+Boar ignores Tiger
+Boar decides to eat Rabbit
+Boar is eating Rabbit
+Hippopotamus flees from Tiger
+Hippopotamus runs away!
+Hippopotamus flees from Falcon
+Hippopotamus runs away!
 Falcon is not interested in Lion
-Falcon is not interested in Leopard
-Crow ignores Leopard
-Crow cautiously interacts with Eagle
-FloweringPlant is thriving.
-Deer has been removed from the simulation.
-Raccoon has been removed from the simulation.
+Falcon attacks Boar, considering it as food.
+Falcon is eating Boar
+Crow ignores Lion
+Crow ignores Raccoon
+Rose is thriving.
+Tulip is thriving.
+Boar has been removed from the simulation.
+Zebra has been removed from the simulation.
+Panda has been removed from the simulation.
+Hippopotamus has been removed from the simulation.
+Bear has been removed from the simulation.
+Zebra has been removed from the simulation.
+Bear has been removed from the simulation.
+Hippopotamus has been removed from the simulation.
 Rabbit has been removed from the simulation.
-Rabbit has been removed from the simulation.
-Rabbit has been removed from the simulation.
-Raccoon has been removed from the simulation.
+Boar has been removed from the simulation.
 
 --- Ecosystem Simulation Summary ---
-Surviving Animals: 11
-Surviving Plants: 1
-Animals removed: 6
+Surviving Animals: 7
+Surviving Plants: 2
+Animals removed: 10
 Ecosystem simulated successfully.
 Current ecosystem status:
-Ecosystem resources: EcosystemResources{temperature=25.30, humidity=51.24%, availableWater=146.00L}
+Ecosystem resources: EcosystemResources{temperature=25.19, humidity=49.39%, availableWater=148.00L}
 Animals:
 Lion (ID: 2): Diet: Carnivore, Consumption Rate: 5
 Wolf (ID: 4): Diet: Carnivore, Consumption Rate: 5
-Bear (ID: 5): Diet: Omnivore, Consumption Rate: 4
 Tiger (ID: 6): Diet: Carnivore, Consumption Rate: 5
 Cheetah (ID: 8): Diet: Carnivore, Consumption Rate: 5
 Fox (ID: 9): Diet: Omnivore, Consumption Rate: 4
 Eagle (ID: 10): Diet: Carnivore, Consumption Rate: 5
-Zebra (ID: 11): Diet: Herbivore, Consumption Rate: 3
 GrizzlyBear (ID: 12): Diet: Carnivore, Consumption Rate: 5
+Raccoon (ID: 13): Diet: Omnivore, Consumption Rate: 4
 Leopard (ID: 14): Diet: Carnivore, Consumption Rate: 5
-Boar (ID: 16): Diet: Omnivore, Consumption Rate: 4
-Hippopotamus (ID: 17): Diet: Herbivore, Consumption Rate: 3
 Falcon (ID: 18): Diet: Carnivore, Consumption Rate: 5
 Crow (ID: 20): Diet: Omnivore, Consumption Rate: 4
 Plants:
-FloweringPlant (ID: 1): Growth Conditions: Rose
+Rose (ID: 1): Growth Conditions: Unknown
+Tulip (ID: 2): Growth Conditions: Unknown
 ```

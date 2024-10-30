@@ -1,6 +1,9 @@
 package com.senla.ecosystem.io.impl;
 
 import com.senla.ecosystem.io.AbstractSaveLoad;
+import com.senla.ecosystem.model.animal.Herbivore;
+import com.senla.ecosystem.model.animal.Omnivore;
+import com.senla.ecosystem.model.animal.Predator;
 import com.senla.ecosystem.model.plant.Plant;
 import com.senla.ecosystem.model.plant.FloweringPlant;
 
@@ -17,7 +20,7 @@ public class PlantSaveLoad extends AbstractSaveLoad<Plant> {
      */
     @Override
     protected String serializeItem(Plant plant) {
-        return plant.getId() + "," + plant.getSpecies() + "," + plant.getGrowthConditions();
+        return plant.getId() + "," + plant.getClass().getSimpleName() + ","+ plant.getSpecies() + "," + plant.getGrowthConditions();
     }
 
     /**
@@ -30,14 +33,20 @@ public class PlantSaveLoad extends AbstractSaveLoad<Plant> {
     @Override
     protected Plant deserializeItem(String line) {
         String[] parts = line.split(",");
-        if (parts.length < 2) {
+        if (parts.length < 3) {
             throw new IllegalArgumentException("Invalid line format: " + line);
         }
 
         int id = Integer.parseInt(parts[0]);
-        String species = parts[1];
-        String growthConditions = parts.length > 2 ? parts[2] : "Unknown";
+        String type = parts[1];
+        String species = parts[2];
+        String growthConditions = parts.length > 3 ? parts[3] : "Unknown";
 
-        return new FloweringPlant(species, id, growthConditions);
+        switch (type.toLowerCase()) {
+            case "floweringplant":
+                return new FloweringPlant(species, id, growthConditions);
+            default:
+                throw new IllegalArgumentException("Unknown animal type: " + type);
+        }
     }
 }
