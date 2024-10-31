@@ -2,7 +2,6 @@ package com.senla.ecosystem.utils;
 
 import lombok.experimental.UtilityClass;
 
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
