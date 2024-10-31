@@ -175,6 +175,7 @@ Tulip population is stable.
 ```
 Enter 1 to simulate, 2 to predict, 3 to configure the environment, 4 to add a creature, 5 to remove a creature, 6 to update a creature, or 0 to exit:
 1
+Starting ecosystem simulation...
 Rabbit flees from Cheetah
 Rabbit runs away!
 Rabbit flees from GrizzlyBear
@@ -222,7 +223,6 @@ GrizzlyBear is not interested in Falcon
 GrizzlyBear is not interested in Wolf
 Rose is thriving.
 Tulip is thriving.
-Starting ecosystem simulation...
 
 --- Ecosystem Simulation Summary ---
 Surviving Animals: 13

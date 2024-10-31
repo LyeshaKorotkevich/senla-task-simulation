@@ -74,10 +74,10 @@ public class EcosystemController {
     }
 
     private void simulateEcosystem() {
-        simulator.simulateAutomatically(1);
-
         logger.info("Starting ecosystem simulation...");
         view.displayMessage("Starting ecosystem simulation...");
+
+        simulator.simulateAutomatically(1);
 
         List<Animal> currentAnimals = animalRepository.getAll();
         List<Plant> currentPlants = plantRepository.getAll();
