@@ -1,7 +1,7 @@
 package com.senla.ecosystem.model.plant;
 
 import com.senla.ecosystem.model.Identifiable;
-import com.senla.ecosystem.simulation.EcosystemResources;
+import com.senla.ecosystem.simulation.ecosystem.EcosystemResources;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

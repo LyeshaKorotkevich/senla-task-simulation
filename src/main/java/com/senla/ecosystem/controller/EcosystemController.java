@@ -44,24 +44,24 @@ public class EcosystemController {
             switch (choice) {
                 case 1 -> {
                     simulateEcosystem();
-                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystemResources());
+                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystem());
                 }
                 case 2 -> showPredictions();
                 case 3 -> {
                     adjustEnvironment();
-                    view.displayEcosystem(simulator.getEcosystemResources());
+                    view.displayEcosystem(simulator.getEcosystem().getEcosystemResources());
                 }
                 case 4 -> {
                     entityService.addLivingEntity();
-                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystemResources());
+                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystem());
                 }
                 case 5 -> {
                     entityService.deleteLivingEntityById();
-                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystemResources());
+                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystem());
                 }
                 case 6 -> {
                     entityService.updateLivingEntityById();
-                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystemResources());
+                    view.displayEcosystem(animalRepository.getAll(), plantRepository.getAll(), simulator.getEcosystem());
                 }
                 case 0 -> running = false;
                 default -> {

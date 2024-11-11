@@ -6,6 +6,8 @@ import com.senla.ecosystem.model.animal.Herbivore;
 import com.senla.ecosystem.model.animal.Predator;
 import com.senla.ecosystem.model.plant.Plant;
 import com.senla.ecosystem.repository.Repository;
+import com.senla.ecosystem.simulation.ecosystem.Ecosystem;
+import com.senla.ecosystem.simulation.ecosystem.EcosystemResources;
 import com.senla.ecosystem.utils.Randomizer;
 import lombok.Data;
 import org.slf4j.Logger;
@@ -28,21 +30,13 @@ public class Simulator {
     private final Repository<Animal> animalRepository;
     private final Repository<Plant> plantRepository;
 
-    private final EcosystemResources ecosystemResources;
+    private final Ecosystem ecosystem;
 
     public Simulator(Repository<Animal> animalRepository, Repository<Plant> plantRepository) {
         this.animalRepository = animalRepository;
         this.plantRepository = plantRepository;
 
-        ecosystemResources = new EcosystemResources(RESOURCE_WATER, RESOURCE_FOOD, RESOURCE_SHELTER);
-    }
-
-    private void removeAnimal(Animal animal) {
-        animalRepository.remove(animal.getId());
-    }
-
-    private void removePlant(Plant plant) {
-        plantRepository.remove(plant.getId());
+        this.ecosystem = new Ecosystem(new EcosystemResources(RESOURCE_WATER, RESOURCE_FOOD, RESOURCE_SHELTER));
     }
 
     public void simulateAutomatically(int cycles) {
@@ -51,13 +45,15 @@ public class Simulator {
         for (int i = 1; i <= cycles; i++) {
             logger.info("Cycle {}: ", i);
 
-            adjustEcosystemConditions();
-            logger.info("Ecosystem conditions adjusted: Temperature = {}, Humidity = {}, Water = {}",
-                    ecosystemResources.getTemperature(), ecosystemResources.getHumidity(), ecosystemResources.getAvailableWater());
+            ecosystem.changeState();
+            logger.info("New ecosystem state: " + ecosystem.getCurrentState().getClass().getSimpleName());
+
+            ecosystem.adjustConditions();
+            logger.info(ecosystem.getEcosystemResources().toString());
 
             performInteractions();
-            replenishResources();
 
+            ecosystem.replenishResources();
             logger.info("Cycle {} completed.\n", i);
         }
 
@@ -69,12 +65,11 @@ public class Simulator {
         double humidityChange = Math.random() * 2 - 1;
         double waterChange = -2;
 
-        ecosystemResources.setTemperature(ecosystemResources.getTemperature() + tempChange);
-        ecosystemResources.setHumidity(ecosystemResources.getHumidity() + humidityChange);
-        ecosystemResources.setAvailableWater(ecosystemResources.getAvailableWater() + waterChange);
+        ecosystem.getEcosystemResources().setTemperature(ecosystem.getEcosystemResources().getTemperature() + tempChange);
+        ecosystem.getEcosystemResources().setHumidity(ecosystem.getEcosystemResources().getHumidity() + humidityChange);
+        ecosystem.getEcosystemResources().setAvailableWater(ecosystem.getEcosystemResources().getAvailableWater() + waterChange);
 
-        logger.info("Ecosystem conditions adjusted: Temperature = {}, Humidity = {}, Water = {}",
-                ecosystemResources.getTemperature(), ecosystemResources.getHumidity(), ecosystemResources.getAvailableWater());
+        logger.info(ecosystem.getEcosystemResources().toString());
     }
 
     private void performInteractions() {
@@ -112,7 +107,7 @@ public class Simulator {
 
         List<Plant> plants = plantRepository.getAll();
         for (Plant plant : plants) {
-            plant.adaptToEnvironment(ecosystemResources);
+            plant.adaptToEnvironment(ecosystem.getEcosystemResources());
             if (plant.getHealth() == 0) {
                 plantsToRemove.add(plant);
             }
@@ -122,18 +117,12 @@ public class Simulator {
         animalsToRemove.forEach(animal -> animalRepository.remove(animal.getId()));
     }
 
-
-    private void replenishResources() {
-        ecosystemResources.setAvailableWater(ecosystemResources.getAvailableWater() + 50);
-        logger.info("Resources replenished: Water levels increased.");
-    }
-
     public String predictPopulationTrends() {
         StringBuilder predictions = new StringBuilder("Population Trends Prediction:\n");
 
-        double availableWater = ecosystemResources.getAvailableWater();
-        double currentHumidity = ecosystemResources.getHumidity();
-        double currentTemperature = ecosystemResources.getTemperature();
+        double availableWater = ecosystem.getEcosystemResources().getAvailableWater();
+        double currentHumidity = ecosystem.getEcosystemResources().getHumidity();
+        double currentTemperature = ecosystem.getEcosystemResources().getTemperature();
 
 
         List<Animal> animals = animalRepository.getAll();

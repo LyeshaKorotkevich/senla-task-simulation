@@ -354,3 +354,36 @@ Tulip population is stable.
 
 2024-10-31 23:00:37 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
 2024-10-31 23:00:37 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 11 animals and 2 plants surviving.
+2024-11-11 21:30:07 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-11-11 21:30:07 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-11-11 21:30:10 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-11-11 21:30:10 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-11-11 21:30:10 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-11-11 21:30:10 INFO  c.s.ecosystem.simulation.Simulator - New ecosystem state: WetEcosystemState
+2024-11-11 21:30:10 INFO  c.s.ecosystem.simulation.Simulator - EcosystemResources{temperature=24.00, humidity=65.00%, availableWater=110.00L}
+2024-11-11 21:30:10 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-11-11 21:30:10 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-11-11 21:30:10 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 16 animals and 2 plants surviving.
+2024-11-11 21:35:02 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-11-11 21:35:02 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-11-11 21:35:04 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-11-11 21:35:04 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-11-11 21:35:04 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-11-11 21:35:04 INFO  c.s.ecosystem.simulation.Simulator - New ecosystem state: HotEcosystemState
+2024-11-11 21:35:04 INFO  c.s.ecosystem.simulation.Simulator - EcosystemResources{temperature=30.00, humidity=45.00%, availableWater=90.00L}
+2024-11-11 21:35:04 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-11-11 21:35:04 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-11-11 21:35:04 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 12 animals and 2 plants surviving.
+2024-11-11 21:54:53 INFO  com.senla.ecosystem.data.DataManager - Simulation loaded from directory: src/main/resources/defaultSimulation
+2024-11-11 21:54:53 INFO  c.s.e.controller.EcosystemController - Ecosystem Simulator started.
+2024-11-11 21:55:00 INFO  c.s.e.controller.EcosystemController - Starting ecosystem simulation...
+2024-11-11 21:55:00 INFO  c.s.ecosystem.simulation.Simulator - Starting automated simulation...
+2024-11-11 21:55:00 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1: 
+2024-11-11 21:55:00 INFO  c.s.ecosystem.simulation.Simulator - New ecosystem state: DryEcosystemState
+2024-11-11 21:55:00 INFO  c.s.ecosystem.simulation.Simulator - EcosystemResources{temperature=27.00, humidity=40.00%, availableWater=95.00L}
+2024-11-11 21:55:00 INFO  c.s.ecosystem.simulation.Simulator - Cycle 1 completed.
+
+2024-11-11 21:55:00 INFO  c.s.ecosystem.simulation.Simulator - Automated simulation ended.
+2024-11-11 21:55:00 INFO  c.s.e.controller.EcosystemController - Ecosystem simulated successfully with 13 animals and 2 plants surviving.

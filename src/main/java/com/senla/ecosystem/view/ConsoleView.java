@@ -1,8 +1,11 @@
 package com.senla.ecosystem.view;
 
+import com.senla.ecosystem.model.Iterator;
 import com.senla.ecosystem.model.animal.Animal;
 import com.senla.ecosystem.model.plant.Plant;
-import com.senla.ecosystem.simulation.EcosystemResources;
+import com.senla.ecosystem.model.plant.PlantCollection;
+import com.senla.ecosystem.simulation.ecosystem.Ecosystem;
+import com.senla.ecosystem.simulation.ecosystem.EcosystemResources;
 
 import java.util.List;
 import java.util.InputMismatchException;
@@ -32,11 +35,10 @@ public class ConsoleView {
      *
      * @param animals  список животных
      * @param plants   список растений
-     * @param resources ресурсы экосистемы
      */
-    public void displayEcosystem(List<Animal> animals, List<Plant> plants, EcosystemResources resources) {
-        System.out.println("Current ecosystem status:");
-        System.out.println("Ecosystem resources: " + resources);
+    public void displayEcosystem(List<Animal> animals, List<Plant> plants, Ecosystem ecosystem) {
+        System.out.println("Current ecosystem status:" + ecosystem.getCurrentState());
+        System.out.println("Ecosystem resources: " + ecosystem.getEcosystemResources());
 
         System.out.println("Animals:");
         for (Animal animal : animals) {
@@ -45,7 +47,9 @@ public class ConsoleView {
         }
 
         System.out.println("Plants:");
-        for (Plant plant : plants) {
+        Iterator<Plant> plantIterator = new PlantCollection(plants).createIterator();
+        while (plantIterator.hasNext()) {
+            Plant plant = plantIterator.next();
             System.out.printf("%s (ID: %d): Growth Conditions: %s\n",
                     plant.getSpecies(), plant.getId(), plant.getGrowthConditions());
         }

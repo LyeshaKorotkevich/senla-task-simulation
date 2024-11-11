@@ -1,4 +1,4 @@
-package com.senla.ecosystem.simulation;
+package com.senla.ecosystem.simulation.ecosystem;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
